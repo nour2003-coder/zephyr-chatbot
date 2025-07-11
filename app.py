@@ -4,8 +4,7 @@ import torch
 
 app = Flask(__name__)
 
-model_id = "nouri20000/employee-chatbot-fr-unquantized"
-
+model_id = "nouri20000/employee-chatbot-fr-merged"
 tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(model_id, trust_remote_code=True)
 
